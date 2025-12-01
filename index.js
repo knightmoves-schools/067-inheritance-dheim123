@@ -1,3 +1,15 @@
+class Agable {
+  constructor(age, year) {
+    this.name = age;
+    this.year = year;
+      
+    const d = new Date();
+    let year = d.getFullYear();
+      
+  }
+}
+
+
 class Company{
     constructor(name, taxId, yearEstablished, taxRate){
         this.name = name;
@@ -23,3 +35,4 @@ class Car{
         this.year = year;
     }
 }
+
