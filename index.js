@@ -1,38 +1,38 @@
 class Agable {
-  constructor(age, year) {
-    this.name = age;
+  constructor(year) {
     this.year = year;
-      
-    const d = new Date();
-    let year = d.getFullYear();
-      
   }
+    age() {
+    const currentYear = new Date().getFullYear();
+    }
+      
 }
 
 
-class Company{
-    constructor(name, taxId, yearEstablished, taxRate){
+class Company extends Agable{
+    constructor(name, taxId, Agable, taxRate){
         this.name = name;
         this.id = taxId;
-        this.year = yearEstablished;
+        this.year = Agable;
         this.taxRate = taxRate;
     }
 }
 
-class Person{
-    constructor(name, ssn, birthYear, taxRate){
+class Person extends Agable{
+    constructor(name, ssn, Agable, taxRate){
         this.name = name;
         this.id = ssn;
-        this.year = birthYear;
+        this.year = Angable;
         this.taxRate = taxRate;
     }
 }
 
-class Car{
-    constructor(model, vin, year){
+class Car extends Agable{
+    constructor(model, vin, Agable){
         this.name = model;
         this.id = vin;
-        this.year = year;
+        this.year = Agable;
     }
 }
+
 
